@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+	<h1><b>Result</b></h1>
+	<div id="output">
+	<label><h5>{{ review }}</h5></label>
+	<br><br>
+	<label><h4>Rating Predicted For Your Reviews: {{ value }} </h4></label>
+	<br>
+	<a href="/">Predict another</a>
+</div>
+</body>
+</html>

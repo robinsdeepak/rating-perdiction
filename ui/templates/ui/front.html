@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- <body style="background-image: url(/static/picture3.jpg)"> -->
+<h1>Review to rating prediction.</h1>
+<div class="center">
+	<h2>Write Your Review </h2>
+	<form name="Feedback" action="/" method="post" id="feed">
+    	{% csrf_token %}
+		<textarea id="mytext" rows="10" cols="50" name="review" placeholder="Share Your Experience With Purchase"></textarea><br>
+		<input type="submit" value="Submit" id="submit">
+	</form>
+
+</div>
+</body>
+</html>
